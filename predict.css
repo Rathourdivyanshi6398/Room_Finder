@@ -1,0 +1,362 @@
+/* Predictor Hero Section */
+.predictor-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.predictor-hero-content {
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    max-width: 800px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.predictor-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.predictor-hero-content .accent {
+    color: #F97316;
+}
+
+.predictor-hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Predictor Form Section */
+.predictor-container {
+    max-width: 1200px;
+    margin: -40px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.predictor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group select,
+.form-group input[type="number"],
+.form-group input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group select:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="text"]:focus {
+    border-color: #8B5CF6;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+    outline: none;
+}
+
+.predict-btn {
+    background: #8B5CF6;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.predict-btn:hover {
+    background: #7C3AED;
+    transform: translateY(-2px);
+}
+
+.predict-btn:active {
+    transform: translateY(0);
+}
+
+/* Results Container */
+.results-container {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.results-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+.results-header {
+    margin-bottom: 2rem;
+}
+
+.results-header h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.results-subtitle {
+    color: #666;
+}
+
+.price-display {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #8B5CF6;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.currency {
+    font-size: 2rem;
+}
+
+.period {
+    font-size: 1.25rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.price-breakdown {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.price-breakdown h3 {
+    margin-bottom: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+.price-breakdown ul {
+    list-style: none;
+}
+
+.price-breakdown li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.price-breakdown li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.price-breakdown .factor-name {
+    color: #555;
+}
+
+.price-breakdown .factor-value {
+    font-weight: 500;
+}
+
+.insights {
+    margin-bottom: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.predict-again-btn {
+    background: white;
+    color: #8B5CF6;
+    border: 2px solid #8B5CF6;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.predict-again-btn:hover {
+    background: #8B5CF6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.predict-again-btn:active {
+    transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .predictor-hero {
+        height: 250px;
+    }
+    
+    .predictor-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .predictor-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .form-container {
+        margin-top: -20px;
+        padding: 1.5rem;
+    }
+    
+    .results-card {
+        padding: 1.5rem;
+    }
+    
+    .price-display {
+        font-size: 2.5rem;
+    }
+    
+    .currency {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .predictor-hero {
+        height: 200px;
+    }
+    
+    .predictor-hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .predictor-container {
+        margin-top: -30px;
+    }
+    
+    .form-container, .results-card {
+        padding: 1.25rem;
+    }
+    
+    .price-display {
+        font-size: 2rem;
+    }
+    
+    .currency {
+        font-size: 1.5rem;
+    }
+    
+    .period {
+        font-size: 1rem;
+    }
+    
+    .price-breakdown {
+        padding: 1rem;
+    }
+} 
